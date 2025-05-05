@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="login-container" id="login">
+        <h2>Ingrese su contraseña</h2>
+        <form action="#" method="POST">
+            <input type="password" name="password" placeholder="Contraseña" id="password" required />
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+    <div class="tabs" id="tabs">
+        <div class="tabSection active" data-tab="home">Inicio</div>
+        <div class="tabSection" data-tab="link1">Link 1</div>
+        <div class="tabSection" data-tab="link2">Link 2</div>
+        <div class="tabSection" data-tab="salir">Salir</div>
+    </div>
+
+    <div class="container-section" id="home" style="display: none;">
+        <div class="floating-text">Bienvenidos</div>
+        <img src="https://cdn.pixabay.com/photo/2022/02/15/10/39/robot-7014652_1280.jpg" alt="Bienvenidos" srcset="">
+    </div>
+    <div class="container-section" id="link1" style="display: none;">
+        <a href="" target="_blank">Link 1</a>
+    </div>
+    <div class="container-section" id="link2" style="display: none;">
+        <a href="" target="_blank">Link 2</a>
+    </div>
+    <div class="container-section" id="salir" style="display: none;">Salir</div>
+
+    <script src="librerias/jQuery3.7.1.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="librerias/sweetalert2.11.21.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
